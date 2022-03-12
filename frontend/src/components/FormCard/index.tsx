@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Movie } from "types/movie";
 import { BASE_URL } from "utils/requests";
 import { validateEmail } from "utils/validate";
@@ -12,7 +12,11 @@ type Props = {
 };
 
 function FormCard({ movieId }: Props) {
+
+  const navigate = useNavigate();
+
   const [movie, setMovie] = useState<Movie>();
+
   useEffect(() => {
     axios.get(`${BASE_URL}/movies/${movieId}`).then((response) => {
       setMovie(response.data);
@@ -41,7 +45,7 @@ function FormCard({ movieId }: Props) {
     }
 
     axios(config).then(respose => {
-      console.log(respose.data)
+      navigate("/");
     })
   }
 
