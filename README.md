@@ -1,4 +1,4 @@
-# ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) Projeto Desenvolvido na semana Spring React
+# ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) Projeto sesenvolvido na semana Spring React
 >  *Crie um app completo para seu portfólio com as tecnologias mais demandadas do mercado*
 
 Projeto mono-repo
